@@ -15,12 +15,5 @@ import com.hexaware.smartrecruitment.service.UserService;
 @RequestMapping("api/users")
 public class UserController {
 
-	@Autowired
-    private UserService userService;
- 
-    @PostMapping("/register")
-    public ResponseEntity<String> registerUser(@RequestBody User user) {
-    	userService.saveUser(user);
-        return ResponseEntity.ok("User Saved Successfully!!");
-    }
+	
 }
